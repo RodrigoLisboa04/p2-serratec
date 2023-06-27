@@ -11,6 +11,7 @@ import {
 import { styles } from "./styles";
 import { Feather, AntDesign, MaterialCommunityIcons, FontAwesome5, Fontisto, SimpleLineIcons } from '@expo/vector-icons';
 
+
 interface Champion {
   name: string;
   title: string;
@@ -45,7 +46,6 @@ export function Modal({
           <Text style={styles.modalTxtHeader}>Informações do Campeão</Text>
           <Fontisto name="favorite" size={25} color="#C8AA6E" />
         </View>
-
         <ScrollView>
           <View style={styles.modalHeaderInfo}>
             <Image
@@ -59,6 +59,7 @@ export function Modal({
               <Text style={styles.modalName}>{selectedChampion?.name} </Text>
               <Text style={styles.modalTitle}>{selectedChampion?.title}</Text>
               <Text style={styles.modalTags}>{selectedChampion?.tags}</Text>
+
             </View>
           </View>
 
@@ -81,6 +82,7 @@ export function Modal({
               <MaterialCommunityIcons name="shield-plus-outline" size={24} color="#fff" />
             </View>
            
+            
             {Object.entries(selectedChampion.stats).map(([key, value], index) => (
               <Text key={index} style={styles.modalStats}>
                 {key}: {value}

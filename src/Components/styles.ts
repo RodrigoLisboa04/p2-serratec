@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, StatusBar, Platform  } from 'react-native'
 
+
 export const styles = StyleSheet.create({
     modalContainer: {
         position: "absolute",
