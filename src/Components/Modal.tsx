@@ -41,12 +41,12 @@ export function Modal({
     <View style={styles.modalContainer}>
       <View style={styles.modalContent}>
         <View style={styles.modalHeader}>
-          <AntDesign name="arrowleft" size={25} color="#fff"/>
-          <Text style={styles.modalName}>Informação do Campeão</Text>
-          <Fontisto name="favorite" size={25} color="#fff" />
+          <AntDesign name="arrowleft" size={25} color="#C8AA6E"/>
+          <Text style={styles.modalTxtHeader}>Informações do Campeão</Text>
+          <Fontisto name="favorite" size={25} color="#C8AA6E" />
         </View>
-        <ScrollView>
 
+        <ScrollView>
           <View style={styles.modalHeaderInfo}>
             <Image
 
